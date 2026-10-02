@@ -4,7 +4,6 @@ import streamlit as st
 
 st.set_page_config(page_title="Movie Ratings Explorer", page_icon="\U0001F3AC", layout="wide")
 
-# Dark charcoal surfaces, warm text, and orange accents inspired by Claude Code.
 st.markdown("""
 <style>
 :root { color-scheme: dark; }
@@ -34,8 +33,6 @@ px.defaults.color_discrete_sequence = ["#FF9D5C", "#D9824B", "#B8673B", "#8E4F31
 st.title("\U0001F3AC Movie Ratings Explorer")
 st.caption("A visual summary of the movie rating data provided.")
 
-# Genre counts use rated movies as the denominator. A movie with multiple genres
-# appears once in each of its genre counts, so shares can add to more than 100%.
 genre_data = [
     ("Drama", 725, 43.1), ("Comedy", 505, 30.0), ("Thriller", 251, 14.9),
     ("Action", 251, 14.9), ("Romance", 247, 14.7), ("Adventure", 135, 8.0),
